@@ -1,0 +1,36 @@
+<section class="verbal-reading">
+    <div class="col-m">
+        <div class="m-wrap J_question">
+            <div class="hd">{$verbal.question}</div>
+            <div class="bd">
+                {if $verbal.qtype == 'single' || $verbal.qtype == 'multiple'}
+                <ul class="{$verbal.qtype}">
+                    {foreach from=$verbal.choices[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <div class="explain cf">
+                    <span class="user-answer"><b>{if $verbal.qtype == 'select'}第{$verbal.userAnswer}句{else}{$verbal.userAnswer}{/if}</b></span>
+                    <span class="{if $verbal.isRight}right-i{else}false-i{/if}"></span>
+                    <span class="detail"><b>答案：</b>{$verbal.explain}</span>
+                    {if $verbal.index < 20}<div class="fr"><a href="" class="login-btn" id="J_next">下一题</a></div>{/if}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sub">
+        <div class="hd">{if $verbal.start}Questions {$verbal.start} to {$verbal.to} are based on this passage.{else}Question {$verbal.index} is based on this passage.{/if}</div>
+        <div class="bd">{$verbal.article}</div>
+    </div>
+</section>
+{if $verbal.index < 20}
+<script type="text/javascript">
+(function () {
+    var paths = location.pathname.split('/');
+    paths[4] = '{$verbal.nextQid}';
+    paths[5] = parseInt(paths[5]) + 1;
+    $('#J_next').attr('href', paths.join('/'));
+}) ();
+</script>
+{/if}

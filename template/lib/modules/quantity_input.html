@@ -1,0 +1,14 @@
+<section class="quantity" id="J_quantity-{$quantity.index}">
+    <div class="hd"><p>{$quantity.question}</p></div>
+    <div class="bd">
+        <div class="question">{$quantity.input}</div>
+    </div>
+</section>
+<script type="text/javascript">
+(function () {
+    var quantity = '#J_quantity-{$quantity.index}',
+        qid = '{$quantity.qid}',
+        quantityEle = $(quantity);
+    jQuery.data(quantityEle[0], { qid: qid, count: quantityEle.find('input').length, answer: '{$quantity.answer}', explain: '{$quantity.explain}' });
+}) ();
+</script>

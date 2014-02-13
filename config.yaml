@@ -1,0 +1,16 @@
+name: gretest
+version: 1
+
+handle:
+    - compress: if ( out_header["Content-Type"] ~ "text" ) compress
+    - compress: if ( out_header["Content-type"]=="text/html" ) compress
+    - compress: if ( out_header["Content-type"]=="application/zip" ) compress
+    - compress: if ( out_header["Content-type"]=="text/plain" ) compress
+    - compress: if ( out_header["Content-type"]=="image/jpeg" ) compress
+    - compress: if ( out_header["Content-type"]=="image/png" ) compress
+    - compress: if ( out_header["Content-type"]=="image/pjpeg" ) compress
+    - compress: if ( out_header["Content-type"]=="image/gif" ) compress
+    - compress: if ( out_header["Content-type"]=="image/bmp" ) compress
+    - compress: if ( out_header["Content-type"]=="application/x-shockwave-flash" ) compress
+    - rewrite: if ( !is_file() && !is_dir() ) goto "/index.php"
+    - errordoc: 404 http://gretest.sinaapp.com/static/html/40x.html

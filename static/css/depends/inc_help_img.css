@@ -1,0 +1,96 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-8
+ * Time: 下午8:22
+ * help页面的图片样式
+ */
+
+.help-next-img, .help-back-img, .help-mark-img, .help-review-img, .help-help-img,
+.help-exit-section-img, .help-quit-test-img, .help-tab-img, .help-backspace-img,
+.help-delete-img, .help-editor-img, .help-calc-img, .help-calculator-img {
+    background: url('/static/img/help.png') no-repeat 0 0;
+    display: inline-block;
+}
+.help-next-img {
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-back-img {
+    background-position: 0 -750px;
+    width: 195px;
+    height: 65px;
+    float: left;;
+    margin-right: 20px;
+}
+.help-mark-img {
+    background-position: 0 -650px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-review-img {
+    background-position: 0 -850px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-help-img {
+    background-position: 0 -100px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-exit-section-img {
+    background-position: 0 -200px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-quit-test-img {
+    background-position: 0 -300px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-tab-img {
+    background-position: 0 -400px;
+    width: 43px;
+    height: 22px;
+}
+.help-backspace-img {
+    background-position: -100px -400px;
+    width: 43px;
+    height: 22px;
+}
+.help-delete-img {
+    background-position: 0 -450px;
+    width: 43px;
+    height: 22px;
+}
+.help-editor-img {
+    background-position: 0 -500px;
+    width: 382px;
+    height: 133px;
+}
+.help-calc-img {
+    background-position: 0 -950px;
+    width: 195px;
+    height: 65px;
+    float: left;
+    margin-right: 20px;
+}
+.help-calculator-img {
+    background-position: 0 -1050px;
+    width: 171px;
+    height: 262px;
+    display: block;
+    margin: 0 auto;
+}

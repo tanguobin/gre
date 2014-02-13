@@ -1,0 +1,40 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-5-5
+ * Time: 下午6:12
+ * 结果页页面样式
+ */
+
+/* 登录部分的样式 */
+.login {
+    background-color: #fafafa;
+    border: 1px solid #ecebeb;
+    padding: 35px 0 50px;
+}
+.login .last a {
+    float: left;
+}
+.login .reset {
+    margin-left: 10px;
+    line-height: 28px;
+}
+.login .registe-box {
+    width: 300px;
+    margin: auto;
+}
+.login .registe-box .tip {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+}
+.login .mem_pass input, .login .mem_pass span {
+    float: left;
+}
+.login .mem_pass input {
+    margin-left: 70px;
+}
+.login .mem_pass span {
+    font-size: 12px;
+    line-height: 20px;
+}

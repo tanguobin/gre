@@ -1,0 +1,20 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-5
+ * Time: 下午6:21
+ * Email: tanguobin@duokan.com
+ * Description: footer部分样式
+ */
+
+.page #footer, .page #footer a:link, .page #footer a:visited {
+    clear: both;
+    color: #7777CC;
+    padding: 1em 0;
+    margin-top: 55px;
+    text-align: center;
+    white-space: nowrap;
+}
+.page #footer {
+    border-top: 1px solid #ccc;
+}

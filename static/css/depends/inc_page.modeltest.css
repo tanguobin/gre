@@ -1,0 +1,127 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-6
+ * Time: 下午4:57
+ * Email: tanguobin@duokan.com
+ */
+
+/* 友情提示 */
+.friend-tip {
+    text-align: center;
+}
+.friend-tip a {
+    margin-top: 15px;
+    display: block;
+}
+.time-expire-tip {
+    text-align: center;
+    margin-top: 60px;
+}
+.time-expire-tip p {
+    margin-bottom: 10px;
+}
+.time-expire-tip a {
+    display: block;
+    margin: 20px auto;
+}
+
+/* 模拟测试section页面样式 */
+.test-page #header {
+    position: relative;
+}
+.test-page #header .logo {
+    float: left;
+}
+.test-page #header .hd {
+    padding-top: 6px;
+}
+.test-page #header .title {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    margin-left: 10px;
+}
+.test-page #header ol {
+    float: right;
+}
+.test-page #header ol li, .test-page #header ul li, .test-page #header ol li a, .test-page #header ul li a {
+    float: left;
+}
+.test-page #header ol li {
+    margin-right: 5px;
+}
+.test-page #header ul {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+.test-page #header ul li {
+    position: relative;
+    left: -50%;
+    height: 34px;
+    background-color: #000;
+    text-align: center;
+}
+.test-page #header ul a {
+    background-color: #a6c7d8;
+    padding-top: 2px;
+    width: 80px;
+    height: 32px;
+    color: #666;
+    font-weight: bold;
+    line-height: 16px;
+    margin-left: 5px;
+}
+.test-page #header ul .current {
+    background-color: #fff;
+    color: #000;
+}
+.test-page #header ul a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.test-page #header .head-tip {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    left: 50%;
+    height: 25px;
+    overflow: hidden;
+    width: 50%;
+}
+.test-page #header .time-tip {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+/* desc */
+.test-page .desc {
+    width: 700px;
+    margin: 50px auto;
+    font-size: 16px;
+}
+.test-page .desc .hd {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.test-page .desc .bd h3 {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.test-page .desc p {
+    margin-bottom: 15px;
+}
+.test-page .desc ul {
+    margin: 20px 0 20px 80px;
+}
+.test-page .desc li {
+    list-style-type: disc;
+}
+.test-page .desc span.state {
+    width: 450px;
+    float: left;
+}

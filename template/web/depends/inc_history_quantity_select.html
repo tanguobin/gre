@@ -1,0 +1,26 @@
+<section class="quantity">
+    <div class="bd J_question">
+        <p>{$quantity.question}</p>
+        <div class="answers">
+            <ul class="{$quantity.qtype}">
+                {foreach from=$quantity.choices[0] item="choice"}
+                <li>{$choice}</li>
+                {/foreach}
+            </ul>
+        </div>
+        <div class="explain cf">
+            <span class="user-answer"><b>{$quantity.userAnswer}</b></span>
+            <span class="{if $quantity.isRight}right-i{else}false-i{/if}"></span>
+            <span class="detail"><b>答案：</b>{$quantity.explain}</span>
+            <div class="fr"><a href="" class="login-btn" id="J_next">下一题</a></div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+(function () {
+    var paths = location.pathname.split('/');
+    paths[4] = '{$quantity.nextQid}';
+    paths[5] = parseInt(paths[5]) + 1;
+    $('#J_next').attr('href', paths.join('/'));
+}) ();
+</script>

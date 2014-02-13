@@ -1,0 +1,22 @@
+<section class="quantity">
+    <div class="hd"><p>{$quantity.question}</p></div>
+    <div class="bd">
+        <div class="question">{$quantity.input}</div>
+        <div class="explain cf">
+            <span class="user-answer"><b>{$quantity.userAnswer}</b></span>
+            <span class="{if $quantity.isRight}right-i{else}false-i{/if}"></span>
+            <span class="detail"><b>答案：</b>{$quantity.explain}</span>
+            {if $quantity.index < 20}<div class="fr"><a href="" class="login-btn" id="J_next">下一题</a></div>{/if}
+        </div>
+    </div>
+</section>
+{if $quantity.index < 20}
+<script type="text/javascript">
+(function () {
+    var paths = location.pathname.split('/');
+    paths[4] = '{$quantity.nextQid}';
+    paths[5] = parseInt(paths[5]) + 1;
+    $('#J_next').attr('href', paths.join('/'));
+}) ();
+</script>
+{/if}

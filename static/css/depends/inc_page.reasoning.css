@@ -1,0 +1,213 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-4-21
+ * Time: 下午10:47
+ * verbal部分的样式
+ */
+
+/* verbal单选题 */
+.test-page .verbal-single .bd {
+    height: 400px;
+}
+.verbal-single .hd {
+    height: 85px;
+    padding-top: 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+.verbal-single .bd {
+    padding: 50px 150px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+.verbal-single .answers dl, .answer-list-verbal .answers dl {
+    float: left;
+    margin-right: 10px;
+    width: 250px;
+    border-bottom: 1px solid #000;
+}
+.verbal-single .answers dt, .answer-list-verbal .answers dt {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.verbal-single .answers ul, .answer-list-verbal .answers ul {
+    zoom: 1;
+}
+.verbal-single .answers ul li, .answer-list-verbal .answers ul li {
+    border: 1px solid #000;
+    text-align: center;
+    border-bottom: none;
+}
+.verbal-single .answers ul li.active, .answer-list-verbal .answers ul li.active {
+    background-color: #000;
+    color: #fff;
+}
+.verbal-single .answers, ul.multiple {
+    margin-top: 40px;
+}
+.answer-list-verbal ul.single, .answer-list-verbal ul.multiple, .answer-list-quantity ul.multiple {
+    margin-top: 10px;
+}
+
+/* verbal阅读部分 */
+.test-page .verbal-reading .col-sub {
+    width: 550px;
+}
+.test-page .verbal-reading .col-m .m-wrap {
+    margin-left: 560px;
+}
+.page .verbal-reading .col-sub {
+    width: 450px;
+}
+.page .verbal-reading .col-m .m-wrap {
+    margin-left: 460px;
+    overflow-y: auto;
+}
+.verbal-reading {
+    border: 1px solid #000;
+    padding: 2px;
+    height: 600px;
+}
+.verbal-reading .col-sub {
+    border: 1px solid #000;
+    padding: 2px;
+    margin-left: -100%;
+    float: left;
+    overflow-y: auto;
+    height: 594px;
+}
+.verbal-reading .col-sub .hd {
+    color: #fff;
+    font-weight: bold;
+    background-color: #000080;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.verbal-reading .col-sub .bd {
+    padding: 50px;
+    text-indent: 2em;
+}
+.verbal-reading .col-sub .bd span.active {
+    background-color: #000;
+    color: #fff;
+}
+.verbal-reading .col-m {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    height: 603px;
+}
+.verbal-reading .col-m .m-wrap {
+    height: 598px;
+    border: 1px solid #000;
+}
+.verbal-reading .col-m .hd {
+    margin: 20px 50px;
+}
+.verbal-reading .col-m .bd {
+    margin: 30px 50px;
+}
+.verbal-reading .col-m .bd li {
+    margin-bottom: 15px;
+}
+
+/* verbal多选题 */
+.test-page .verbal-multiple .bd {
+    height: 400px;
+}
+.verbal-multiple .hd {
+    height: 85px;
+    padding: 20px 200px;
+    text-align: center;
+    border: 1px solid #000;
+}
+.verbal-multiple .bd {
+    padding: 50px 150px;
+    border: 1px solid #000;
+    margin-top: 5px;
+}
+.verbal-multiple .answers {
+    margin: 40px 0 0 20px;
+}
+
+/* 单选题和多选题 */
+ul.single li {
+    list-style: disc outside url("/static/img/single.png");
+    margin-left: 30px;
+    padding-left: 20px;
+    -moz-user-select: none;
+}
+ul.single li.active {
+    list-style-image: url("/static/img/single.active.png");
+}
+ul.multiple li {
+    list-style: disc outside url("/static/img/mutiple.png");
+    margin-left: 30px;
+    padding-left: 20px;
+    -moz-user-select: none;
+}
+ul.multiple li.active {
+    list-style-image: url("/static/img/mutiple.active.png");
+}
+
+/* 数理推理 */
+.quantity {
+    margin: 100px auto;
+    width: 600px;
+}
+.quantity .answers {
+    margin: 40px 0 0 150px;
+}
+.quantity .answers li {
+    margin-bottom: 10px;
+}
+.quantity-a, .quantity-b {
+    text-decoration: underline;
+}
+.quantity-a, .compare .a {
+    float: left;
+    text-align: left;
+}
+.quantity-b, .compare .b {
+    float: right;
+    text-align: right;
+}
+.compare .a, .compare .b {
+    width: 290px;
+}
+.quantity p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.quantity p img, .answer-list-quantity p img, .explain .detail img {
+    display: block;
+    margin: 0 auto 20px;
+}
+.quantity input, .answer-list-quantity input {
+    width: 108px;
+    height: 29px;
+    line-height: 29px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #000;
+}
+.quantity hr, .answer-item hr {
+    width: 108px;
+    margin: 0 auto;
+}
+.quantity .question, .answer-list-quantity .question {
+    text-align: center;
+}
+
+/* 数理推理结果页 */
+.answer-list-quantity .compare {
+    width: 500px;
+    margin-left: 10px;
+}
+.answer-list-quantity .answers {
+    margin: 15px 0 0 10px;
+}
+.answer-list-quantity .compare .a, .answer-list-quantity .compare .b {
+    width: 240px;
+}

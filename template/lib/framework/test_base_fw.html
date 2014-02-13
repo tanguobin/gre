@@ -1,0 +1,64 @@
+{extends file="lib/framework/base_fw.html"}
+
+{block name="meta"}<meta name="robots" content="noindex, nofollow" />{/block}
+
+{block name="header"}
+<div class="hd cf">
+    <a href="/" title="爱GRE在线模考" class="logo"></a>
+    <div class="title">GRE&reg; Test Preview Tool Section <span id="J_csection-num">{$section.current|default:1}</span> of <span class="J_tsection-num">{$section.total|default:1}</span></div>
+    {block name="operation"}{include file="web/depends/inc_operation.html"}{/block}
+</div>
+<div class="bd" id="J_header-bd"></div>
+{/block}
+
+{block name="top-bar"}{/block}
+
+{block name="foot"}
+<script type="text/javascript">
+$(document).ready(function () {
+    // 禁用浏览器的部分事件
+    $(document).bind({
+        contextmenu: function (e) {
+            return false;
+        },
+        keydown: function (e) {
+            if ((e.altKey) && ((e.keyCode==37) || (e.keyCode==39))) {
+                return false;
+            }
+            if ((e.keyCode == 116) || (e.ctrlKey && e.keyCode == 82) || (e.ctrlKey && e.keyCode == 67) || (e.ctrlKey && e.keyCode == 86) || (e.ctrlKey && e.keyCode == 90) || (e.ctrlKey && e.keyCode == 89)) {
+                e.keyCode = 0;
+                return false;
+            }
+            if (e.shiftKey && e.keyCode == 121) {
+                return false;
+            }
+        }
+    });
+    $(window).bind({
+        beforeunload : function (e) {
+            return 'Are you sure to quit the GRE Test ？';
+        }
+    });
+    // 对话框提醒
+    if ($.cookie('has_tip_show') === null) {
+        GRE.load('/static/js/depends/UI_Dialog.js', function () {
+            var dialog = GRE.getDialog({
+                titleText: '友情提示',
+                contentText: '<div class="friend-tip"><p>按F11键进入全屏模式</p><a href="#" id="J_iknow">我知道了</a></div>'
+            });
+            $('#J_iknow').click(function () {
+                dialog.close();
+                return false;
+            });
+        });
+        $.cookie('has_tip_show', true);
+    }
+    // 初始化操作区
+    GRE.operation.init();
+});
+</script>
+<script type="text/javascript" src="/static/js/gretest.js-min.js"></script>
+{/block}
+
+{block name="footer"}{/block}
+{block name="bodyclass"} class="test-page"{/block}

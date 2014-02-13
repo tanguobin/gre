@@ -1,0 +1,70 @@
+<section class="verbal-reading">
+    <div class="col-m">
+        <div class="m-wrap J_question">
+            <div class="hd">1、<strong>{$verbal.question}</strong></div>
+            <div class="bd">
+                {if $verbal.qtype == 'single' || $verbal.qtype == 'multiple'}
+                <ul class="{$verbal.qtype}">
+                    {foreach from=$verbal.choices[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <div class="explain cf">
+                    <span class="detail"><b>答案：</b>{$verbal.explain}</span>
+                </div>
+            </div>
+            {if $verbal.question2}
+            <div class="hd">2、<strong>{$verbal.question2}</strong></div>
+            <div class="bd">
+                {if $verbal.q2type == 'single' || $verbal.q2type == 'multiple'}
+                <ul class="{$verbal.qtype}">
+                    {foreach from=$verbal.choices2[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <div class="explain cf">
+                    <span class="detail"><b>答案：</b>{$verbal.explain2}</span>
+                </div>
+            </div>
+            {/if}
+            {if $verbal.question3}
+            <div class="hd">3、<strong>{$verbal.question3}</strong></div>
+            <div class="bd">
+                {if $verbal.q3type == 'single' || $verbal.q3type == 'multiple'}
+                <ul class="{$verbal.qtype}">
+                    {foreach from=$verbal.choices3[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <div class="explain cf">
+                    <span class="detail"><b>答案：</b>{$verbal.explain3}</span>
+                </div>
+            </div>
+            {/if}
+            {if $verbal.question4}
+            <div class="hd">4、<strong>{$verbal.question4}</strong></div>
+            <div class="bd">
+                {if $verbal.q4type == 'single' || $verbal.q4type == 'multiple'}
+                <ul class="{$verbal.qtype}">
+                    {foreach from=$verbal.choices4[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <div class="explain cf">
+                    <span class="detail"><b>答案：</b>{$verbal.explain4}</span>
+                </div>
+            </div>
+            {/if}
+        </div>
+    </div>
+    <div class="col-sub">
+        <div class="bd"><strong>{$verbal.article}</strong></div>
+    </div>
+</section>
+{if $verbal.id < $verbal.maxId}
+<div class="next fr cf"><a href="/{$verbal.action}/{$verbal.id + 1}" class="login-btn">下一题</a></div>
+{/if}

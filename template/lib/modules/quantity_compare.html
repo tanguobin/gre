@@ -1,0 +1,29 @@
+<section class="quantity" id="J_quantity-{$quantity.index}">
+    <div class="bd J_question">
+        <p>{$quantity.question}</p>
+        <div class="compare cf"><div class="quantity-a">Quantity A</div><div class="quantity-b">Quantity B</div></div>
+        <div class="compare cf"><div class="a">{$quantity.A}</div><div class="b">{$quantity.B}</div></div>
+        <div class="answers">
+            <ul class="single">
+                <li>Quantity A is greater.</li>
+                <li>Quantity B is greater.</li>
+                <li>The two quantities are equal.</li>
+                <li>The relationship cannot be determined from the information given.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    (function () {
+        var quantity = '#J_quantity-{$quantity.index}';
+        jQuery.data($(quantity)[0], { qid: '{$quantity.qid}', count: 1, answer: '{$quantity.answer}', explain: '{$quantity.explain}' });
+        $(quantity + ' li').click(function (evt) {
+            var me = this;
+            if ($(me).hasClass('active')) {
+                return false;
+            }
+            $(me).siblings().removeClass('active');
+            $(me).addClass('active');
+        });
+    }) ();
+</script>

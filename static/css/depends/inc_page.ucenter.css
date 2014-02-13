@@ -1,0 +1,133 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-6-24
+ * Time: 上午12:11
+ * 用户中心样式
+ */
+
+.tabs .tab-control {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+    font-size: 12px;
+}
+
+.tabs .tab-control li.current {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #fff;
+    border-top-color: #c5cbce;
+    font-weight: bold;
+    position: relative;
+}
+
+.tabs .tab-control li {
+    background-color: #deeeec;
+    border-bottom: 1px solid #c5cbce;
+    border-right: 1px solid #b3d2cf;
+    border-top: 1px solid #b3d2cf;
+    color: #666;
+    cursor: pointer;
+    height: 25px;
+    line-height: 26px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    font-family: tahoma;
+    letter-spacing: normal;
+    vertical-align: bottom;
+    word-spacing: normal;
+}
+
+.ui-tab-first {
+    border-left: 1px solid #c5cbce;
+    border-radius: 2px 0 0 0;
+}
+
+.ui-tab-last {
+    border-radius: 0 2px 0 0;
+}
+
+.ucenter .bd {
+    border: 1px solid #c5cbce;
+    border-radius: 0 2px 2px 2px;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+.tabs .tab-content li {
+    display: none;
+    padding: 20px 20px 0 25px;
+}
+
+.tabs .tab-content li.current {
+    display: block;
+}
+
+.nk-uc-null {
+    color: #c4c4c4;
+    padding-bottom: 100px;
+    padding-top: 81px;
+    text-align: center;
+}
+
+.nk-uc-null p {
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.log-item {
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.log-item.last {
+    border-bottom: none;
+}
+
+.log-item dt {
+    font-size: 14px;
+}
+
+.log-item dt a {
+    margin-left: 10px;
+}
+
+.log-item dd {
+    margin-left: 23px;
+}
+
+.log-item .log-answer {
+    padding-top: 10px;
+}
+
+.log-item .log-answer .detail {
+    font-family: 'simsun';
+    margin-left: 20px;
+}
+
+.log-item .log-footer {
+    color: #8e8e8e;
+    padding-top: 10px;
+}
+
+.feed-more {
+    background: url('/static/img/more.gif') repeat-x scroll 0 0 transparent;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    clear: both;
+    color: #168b79;
+    cursor: pointer;
+    display: block;
+    height: 29px;
+    line-height: 29px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.feed-more:hover {
+    background: url('/static/img/more-hover.gif') repeat-x scroll 0 0 transparent;
+    text-decoration: none;
+}

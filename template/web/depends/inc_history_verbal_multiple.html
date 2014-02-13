@@ -1,0 +1,27 @@
+<section class="verbal-multiple">
+    <div class="hd">
+        <p>Select the <b>two</b> answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole <b>and</b> produce completed sentences that are alike in meaning.</p>
+    </div>
+    <div class="bd J_question">
+        <p>{$verbal.question}</p>
+        <ul class="multiple">
+        {foreach from=$verbal.choices[0] item="choices"}
+            <li>{$choices}</li>
+        {/foreach}
+        </ul>
+        <div class="explain cf">
+            <span class="user-answer"><b>{$verbal.userAnswer}</b></span>
+            <span class="{if $verbal.isRight}right-i{else}false-i{/if}"></span>
+            <span class="detail"><b>答案：</b>{$verbal.explain}</span>
+            <div class="fr"><a href="" class="login-btn" id="J_next">下一题</a></div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+(function () {
+    var paths = location.pathname.split('/');
+    paths[4] = '{$verbal.nextQid}';
+    paths[5] = parseInt(paths[5]) + 1;
+    $('#J_next').attr('href', paths.join('/'));
+}) ();
+</script>

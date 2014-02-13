@@ -1,0 +1,34 @@
+<section class="verbal-single">
+    <div class="hd">
+        <p>
+            {if count($verbal.choices) == 1}
+            Select one entry for the blank. Fill the blank in the way that best completes the text.
+            {else}
+            For each blank select one entry from the corresponding column of choices. Fill all blanks in the way that best completes the text.
+            {/if}
+        </p>
+    </div>
+    <div class="bd">
+        <p><strong>{$verbal.question}</strong></p>
+        <div class="answers cf">
+            {foreach from=$verbal.choices item="choices" key="key"}
+            <dl>
+                <dt>{if count($verbal.choices) > 1}{if $key == 0}Blank (i){elseif $key == 1}Blank (ii){else}Blank (iii){/if}{/if}</dt>
+                <dd>
+                    <ul>
+                        {foreach from=$choices item="choice"}
+                        <li>{$choice}</li>
+                        {/foreach}
+                    </ul>
+                </dd>
+            </dl>
+            {/foreach}
+        </div>
+        <div class="explain cf">
+            <span class="detail"><b>答案：</b>{$verbal.explain}</span>
+            {if $verbal.id < $verbal.maxId}
+            <div class="fr next cf"><a href="/{$verbal.action}/{$verbal.id + 1}" class="login-btn">下一题</a></div>
+            {/if}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,156 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-5
+ * Time: 下午4:44
+ * Email: tanguobin@duokan.com
+ * Description: 网页布局样式
+ */
+
+/* 居中 */
+.page #header, .page #container, .page #footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** 布局基础样式 **/
+.col-main {
+    float: left;
+    width: 100%;
+    /* bug fix: 主栏没有内容时，在 Firefox 和 Chrome 等浏览器下，布局不对 */
+    min-height: 1px;
+}
+
+/** 清除浮动 **/
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after, .clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.layout {
+    overflow: hidden;
+}
+.layout, .main-wrap, .col-sub, .col-extra .clearfix {
+    *zoom: 1;
+}
+.col-sub, .col-extra {
+    float: left;
+}
+
+/** 两栏布局 **/
+.grid-s160m0 .main-wrap { margin-left: 160px; }
+.grid-s160m0 .col-sub { width: 160px; margin-left: -100%; }
+.grid-s190m0 .main-wrap { margin-left: 190px; }
+.grid-s190m0 .col-sub { width: 190px; margin-left: -100%; }
+
+/** 三栏布局 **/
+.grid-s190m0e190 .main-wrap { margin: 0 190px 0 190px; }
+.grid-s190m0e190 .col-sub { width: 190px; margin-left: -100%; }
+.grid-s190m0e190 .col-extra { width: 190px; margin-left: -190px; }
+
+/** 背景 **/
+.grid-s190m0 {
+    background: url('/static/img/layout.bg.gif') repeat-y scroll 190px top transparent;
+}
+
+/* 宽度定义 */
+.span-1 {
+    width: 20px;
+}
+.span-2 {
+    width: 50px;
+}
+.span-3 {
+    width: 80px;
+}
+.span-4 {
+    width: 110px;
+}
+.span-5 {
+    width: 140px;
+}
+.span-6 {
+    width: 170px;
+}
+.span-7 {
+    width: 200px;
+}
+.span-8 {
+    width: 230px;
+}
+.span-9 {
+    width: 260px;
+}
+.span-10 {
+    width: 290px;
+}
+.span-11 {
+    width: 320px;
+}
+.span-12 {
+    width: 350px;
+}
+.span-13 {
+    width: 380px;
+}
+.span-14 {
+    width: 410px;
+}
+.span-15 {
+    width: 440px;
+}
+.span-16 {
+    width: 470px;
+}
+.span-17 {
+    width: 500px;
+}
+.span-18 {
+    width: 530px;
+}
+.span-19 {
+    width: 560px;
+}
+.span-20 {
+    width: 590px;
+}
+.span-21 {
+    width: 620px;
+}
+.span-22 {
+    width: 650px;
+}
+.span-23 {
+    width: 680px;
+}
+.span-24 {
+    width: 710px;
+}
+.span-25 {
+    width: 740px;
+}
+.span-26 {
+    width: 770px;
+}
+.span-27 {
+    width: 800px;
+}
+.span-28 {
+    width: 830px;
+}
+.span-29 {
+    width: 860px;
+}
+.span-30 {
+    width: 890px;
+}
+.span-31 {
+    width: 920px;
+}
+.span-32 {
+    width: 950px;
+}
+.span-33 {
+    width: 980px;
+}

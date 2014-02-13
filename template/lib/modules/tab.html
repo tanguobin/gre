@@ -1,0 +1,5 @@
+<ul id="J_help-tab">
+{foreach from=$help.tabList item="tab" name="tabList"}
+<li><a href='#'{if $smarty.foreach.tabList.first} class="current"{/if}>{$tab.name|escape}</a></li>
+{/foreach}
+</ul>

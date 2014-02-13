@@ -1,0 +1,82 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-5-5
+ * Time: 下午6:12
+ * 结果页页面样式
+ */
+
+.result-page {
+    border: 1px solid #cbd0d2;
+    padding: 20px 50px 50px;
+}
+.result-page .mod-hd {
+    padding: 10px;
+}
+.result-page .mod-hd .hand-i {
+    float: left;
+}
+.result-page .mod-hd .congrats {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 25px 0 0 60px;
+}
+.result-page .mod-bd {
+    margin: 10px 50px;
+    font-size: 14px;
+    border: 1px solid #bcd8ec;
+    padding-bottom: 10px;
+}
+.result-page .mod-bd p {
+    padding: 10px;
+}
+.result-page .mod-bd .title {
+    background-color: #e8f3f9;
+    border-bottom: 1px solid #bcd8ec;
+}
+.result-page .mod-bd .title span {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.result-page .mod-bd .action {
+    float: right;
+    margin: 20px 20px 0 0;
+}
+.result-page .mod-bd .action a {
+    float: left;
+    margin-right: 10px;
+}
+.result-page .mod-bd .save-btn {
+    float: right;
+}
+.result-page .save-adv {
+    margin: 20px;
+}
+.result-page .save-adv li {
+    margin-top: 10px;
+}
+.result-page .save-adv li span {
+    margin-right: 10px;
+}
+
+/* 答案列表 */
+.result-page .explain .detail {
+    width: 650px;
+    margin-left: 10px;
+}
+.answer-item {
+    border-bottom: 1px solid #bcd8ec;
+    padding: 12px 10px;
+    margin: 0 10px;
+}
+.explain {
+    margin-top: 20px;
+}
+.explain span {
+    float: left;
+}
+.explain .user-answer {
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 16px;
+}

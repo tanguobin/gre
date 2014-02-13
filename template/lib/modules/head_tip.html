@@ -1,0 +1,17 @@
+<div class="head-tip">
+    <b class="question-tip" id="J_question-tip">Question {$question.current|default:1} of {$question.total|default:1}</b>
+    <div class="time-tip" id="J_time-tip"><a href="#" class="hide-time-btn" id="J_time-btn"></a><b id="J_timer">{$section.time|default:"00 : 30 : 00"}</b></div>
+</div>
+<script type="text/javascript">
+$('#J_time-btn').click(function (evt) {
+    var btn = evt.target;
+    if (btn.className == 'hide-time-btn') {
+        btn.className = 'show-time-btn';
+        $('#J_timer').hide();
+    } else {
+        btn.className = 'hide-time-btn';
+        $('#J_timer').show();
+    }
+    return false;
+});
+</script>

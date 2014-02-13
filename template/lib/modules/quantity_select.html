@@ -1,0 +1,31 @@
+<section class="quantity" id="J_quantity-{$quantity.index}">
+    <div class="bd J_question">
+        <p>{$quantity.question}</p>
+        <div class="answers">
+            <ul class="{$quantity.qtype}">
+                {foreach from=$quantity.choices[0] item="choice"}
+                <li>{$choice}</li>
+                {/foreach}
+            </ul>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+(function () {
+    var quantity = '#J_quantity-{$quantity.index}',
+        qid = '{$quantity.qid}',
+        qtype = '{$quantity.qtype}';
+    jQuery.data($(quantity)[0], { qid: qid, count: 1, answer: '{$quantity.answer}', explain: '{$quantity.explain}' });
+    $(quantity + ' li').click(function (evt) {
+        var me = this;
+        if ($(me).hasClass('active')) {
+            return false;
+        }
+        if (qtype === 'single') {
+            $(me).addClass('active').siblings().removeClass('active');
+        } else {
+            $(me).addClass('active');
+        }
+    });
+}) ();
+</script>

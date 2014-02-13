@@ -1,0 +1,7 @@
+{foreach from=$tab.list item="item" name="tabList"}
+<dl class="log-item{if $smarty.foreach.tabList.last} last{/if}">
+    <dt><span class="log-i"></span>{if $tab.type == "issue" || $tab.type == "argument"}<a href="/view/{$tab.type}/{$item.id}" target="_blank">{$item.title|escape|truncate:100}</a>{else}<a href="/view/{$tab.type}/{$item.id}/{$item.startqid}/1" target="_blank">{$item.question|escape|truncate:100}</a>{/if}</dt>
+    <dd class="log-answer">{if $tab.type == "issue" || $tab.type == "argument"}{$item.article|escape|truncate:200}<a class="detail" href="/view/{$tab.type}/{$item.id}" target="_blank">详细>></a>{else}<a class="detail" href="/view/{$tab.type}/{$item.id}/{$item.startqid}/1" target="_blank">详细>></a>{/if}</dd>
+    <dd class="log-footer">发表于 {$item.dateline}</dd>
+</dl>
+{/foreach}

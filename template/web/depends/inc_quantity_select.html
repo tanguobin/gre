@@ -1,0 +1,18 @@
+<section class="quantity">
+    <div class="bd J_question">
+        <p><strong>{$quantity.question}</strong></p>
+        <div class="answers">
+            <ul class="{$quantity.qtype}">
+                {foreach from=$quantity.choices[0] item="choice"}
+                <li>{$choice}</li>
+                {/foreach}
+            </ul>
+        </div>
+        <div class="explain cf">
+            <span class="detail"><b>答案：</b>{$quantity.explain}</span>
+            {if $quantity.id < $quantity.maxId}
+            <div class="next fr cf"><a href="/{$quantity.action}/{$quantity.id + 1}" class="login-btn">下一题</a></div>
+            {/if}
+        </div>
+    </div>
+</section>

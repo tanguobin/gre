@@ -1,0 +1,259 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-6
+ * Time: 上午10:42
+ * Email: tanguobin@duokan.com
+ * Description: 按钮button的样式
+ */
+
+/* btn.png */
+.continue-btn, .next-btn, .back-btn, .mark-btn, .mark-ck-btn, .review-btn, .quit-test-btn, .exit-section-btn,
+.help-btn, .return-btn, .hide-time-btn, .show-time-btn, .cut-btn, .paste-btn, .undo-btn, .redo-btn, .paste-btn-disable,
+.undo-btn-disable, .redo-btn-disable, .calc-btn, .goto-btn {
+    background: url('/static/img/btn.png') no-repeat 0 0;
+    display: inline-block;
+    outline: none;
+}
+.continue-btn {
+    width: 82px;
+    height: 41px;
+}
+.continue-btn:hover {
+    background-position: 0 -650px;
+}
+.hide-time-btn, .show-time-btn {
+    width: 71px;
+    height: 20px;
+    position: absolute;
+    right: 90px;
+    top: 1px;
+}
+.hide-time-btn {
+    background-position: 0 -250px;
+}
+.hide-time-btn:hover {
+    background-position: 0 -900px;
+}
+.show-time-btn {
+    background-position: 0 -1200px;
+}
+.show-time-btn:hover {
+    background-position: 0 -1250px;
+}
+.cut-btn {
+    background-position: 0 -300px;
+    width: 29px;
+    height: 28px;
+    cursor: pointer;
+}
+.paste-btn {
+    background-position: right -300px;
+    width: 43px;
+    height: 28px;
+}
+.paste-btn-disable {
+    background-position: 0 -1300px;
+    width: 43px;
+    height: 28px;
+    cursor: auto;
+}
+.next-btn {
+    background-position: 0 -200px;
+    width: 64px;
+    height: 41px;
+}
+.next-btn:hover {
+    background-position: 0 -850px;
+}
+.back-btn {
+    background-position: 0 -450px;
+    width: 64px;
+    height: 41px;
+}
+.back-btn:hover {
+    background-position: 0 -1000px;
+}
+.undo-btn {
+    background-position: 0 -350px;
+    width: 39px;
+    height: 28px;
+}
+.redo-btn {
+    background-position: right -350px;
+    width: 39px;
+    height: 28px;
+}
+.undo-btn-disable {
+    background-position: right -1300px;
+    width: 39px;
+    height: 28px;
+    cursor: auto;
+}
+.redo-btn-disable {
+    background-position: 0 -1350px;
+    width: 39px;
+    height: 28px;
+    cursor: auto;
+}
+.mark-btn {
+    background-position: 0 -550px;
+    width: 64px;
+    height: 41px;
+}
+.mark-btn:hover {
+    background-position: 0 -1100px;
+}
+.mark-ck-btn {
+    background-position: 0 -1400px;
+    width: 64px;
+    height: 41px;
+}
+.mark-ck-btn:hover {
+    background-position: 0 -1450px;
+}
+.review-btn {
+    background-position: 0 -500px;
+    width: 64px;
+    height: 41px;
+}
+.review-btn:hover {
+    background-position: 0 -1050px;
+}
+.quit-test-btn {
+    background-position: 0 -50px;
+    width: 64px;
+    height: 41px;
+}
+.quit-test-btn:hover {
+    background-position: 0 -700px;
+}
+.exit-section-btn {
+    background-position: 0 -100px;
+    width: 64px;
+    height: 41px;
+}
+.exit-section-btn:hover {
+    background-position: 0 -750px;
+}
+.help-btn {
+    background-position: 0 -150px;
+    width: 64px;
+    height: 41px;
+}
+.help-btn:hover {
+    background-position: 0 -800px;
+}
+.return-btn {
+    background-position: 0 -400px;
+    width: 82px;
+    height: 41px;
+}
+.return-btn:hover {
+    background-position: 0 -950px;
+}
+.calc-btn {
+    background-position: 0 -600px;
+    width: 63px;
+    height: 41px;
+}
+.calc-btn:hover {
+    background-position: 0 -1150px;
+}
+.goto-btn {
+    background-position: 0 -1500px;
+    width: 81px;
+    height: 41px;
+}
+.goto-btn:hover {
+    background-position: 0 -1550px;
+}
+
+/* buttons.png */
+.enter-btn, .login-btn, .qq-btn, .sina-btn, .save-btn, .mod-btn {
+    background: url('/static/img/buttons.png') no-repeat 0 0;
+    display: block;
+    outline: none;
+}
+.enter-btn {
+    color: #fff;
+    font-size: 20px;
+    height: 39px;
+    line-height: 38px;
+    text-align: center;
+    font-family: 'Microsoft YaHei','Simsun',arial,sans-serif;
+    width: 155px;
+}
+.enter-btn:hover {
+    background-position: 0 -51px;
+    text-decoration: none;
+}
+.save-btn {
+    background-position: 0 -150px;
+    width: 107px;
+    height: 21px;
+}
+.login-btn {
+    background-position: 0 -200px;
+    width: 79px;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.login-btn:hover {
+    background-position: -79px -200px;
+    text-decoration: none;
+}
+.normal-btn {
+    background-image: -moz-linear-gradient(center top , #f5f5f5, #dcdcdc);
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    color: #333;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 5px 15px;
+}
+.normal-btn:hover {
+    background-image: -moz-linear-gradient(center top , #fff, #e6e6e6);
+    text-decoration: none;
+}
+.qq-btn {
+    background-position: 0 -250px;
+    width: 106px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 42px;
+    color: #666;
+}
+.qq-btn:hover {
+    background-position: 0 -282px;
+    text-decoration: none;
+}
+.sina-btn {
+    background-position: 0 -320px;
+    width: 106px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 42px;
+    color: #666;
+}
+.sina-btn:hover {
+    background-position: 0 -352px;
+    text-decoration: none;
+}
+.mod-btn {
+    display: inline-block;
+    background-position: 0 -100px;
+    width: 43px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}

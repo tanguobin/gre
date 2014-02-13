@@ -1,0 +1,33 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-5-5
+ * Time: 上午11:30
+ * UI组件dialog样式
+ */
+
+.dialog {
+    border: #404040 solid 1px;
+    background: #fff;
+}
+.dialog-header {
+    background-color: #d1e4ef;
+    padding : 5px 12px;
+    font-weight : bold;
+    color : #000;
+    font-size: 14px;
+}
+.dialog-content {
+    padding : 5px;
+}
+.dialog-close {
+    position : absolute;
+    right : 8px;
+    top : 8px;
+    width : 19px;
+    height : 19px;
+    background : url('/static/img/icons.png') no-repeat 0 0;
+}
+.dialog-close-hover, .dialog-close-press {
+    background-position : 0 -50px;
+}

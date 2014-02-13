@@ -1,0 +1,108 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-5-12
+ * Time: 下午6:35
+ * 注册页面样式
+ */
+
+.divider {
+    background-color: #158b4f;
+    height: 5px;
+    overflow: hidden;
+}
+
+.apply {
+    background-color: #fafafa;
+    border: 1px solid #ecebeb;
+    padding: 25px 25px 75px;
+}
+
+.apply .hd {
+    border-bottom: 1px solid #e5e5e5;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 33px;
+    padding-bottom: 12px;
+}
+
+.apply .pass-reg-i {
+    margin-top: 8px;
+}
+
+.apply .registe-box {
+    width: 600px;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+}
+
+.pass-reg-des {
+    border: 1px solid #e1e192;
+    background-color: #fffceb;
+    padding: 0 10px;
+    display: inline-block;
+}
+.pass-reg-err {
+    border: 1px solid #f1a261;
+    background-color: #fff0dd;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.registe-login-area {
+    float: left;
+    padding-left: 30px;
+}
+.registe-login-area li {
+    margin-bottom: 15px;
+}
+
+.registe-box li {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.registe-box li input.text {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    width: 190px;
+    outline: none;
+    float: left;
+}
+.registe-box li input.active {
+    border-color: #239259;
+}
+.registe-box li label {
+    width: 70px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+    float: left;
+}
+.registe-box .login-btn, .registe-box .checkbox {
+    margin-left: 70px;
+}
+.registe-box .agree {
+    margin-left: 5px;
+}
+.registe-box li input.code {
+    width: 80px;
+}
+.registe-box img {
+    vertical-align: top;
+    margin: 1px 5px 0;
+    float: left;
+}
+.registe-box .change {
+    line-height: 30px;
+    float: left;
+}
+.registe-box li span {
+    margin-left: 5px;
+    line-height: 30px;
+}

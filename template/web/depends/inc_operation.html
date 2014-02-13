@@ -1,0 +1,12 @@
+<ol class="operation" id="J_operation">
+    <li><a href='{$operation.hasReturn.url|default:"/"}' class="return-btn{if !isset($operation.hasReturn)} hide{/if}" id="J_return" title="Return"></a></li>
+    <li><a href='{$operation.hasGoto.url|default:"/"}' class="goto-btn{if !isset($operation.hasGoto)} hide{/if}" id="J_goto" title="Go To Question"></a></li>
+    <li><a href='{$operation.hasContinue.url|default:"/"}' class="continue-btn{if !isset($operation.hasContinue)} hide{/if}" id="J_continue" title="Continue"></a></li>
+    <li><a href='{$operation.hasQuit.url|default:"/"}' class="quit-test-btn{if !isset($operation.hasQuit)} hide{/if}" id="J_quit-test" title="Quit Test"></a></li>
+    <li><a href='{$operation.hasExit.url|default:"/"}' class="exit-section-btn{if !isset($operation.hasExit)} hide{/if}" id="J_exit-section" title="Exit Section"></a></li>
+    <li><a href='{$operation.hasMark.url|default:"/"}' class="mark-btn{if !isset($operation.hasMark)} hide{/if}" id="J_mark" title="Mark"></a></li>
+    <li><a href='{$operation.hasReview.url|default:"/"}' class="review-btn{if !isset($operation.hasReview)} hide{/if}" id="J_review" title="Review"></a></li>
+    <li><a href='{$operation.hasHelp.url|default:"/"}' class="help-btn{if !isset($operation.hasHelp)} hide{/if}" id="J_help" title="Help"></a></li>
+    <li><a href='{$operation.hasBack.url|default:"/"}' class="back-btn{if !isset($operation.hasBack)} hide{/if}" id="J_back" title="Back"></a></li>
+    <li><a href='{$operation.hasNext.url|default:"/"}' class="next-btn{if !isset($operation.hasNext)} hide{/if}" id="J_next" title="Next"></a></li>
+</ol>

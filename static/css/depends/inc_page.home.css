@@ -1,0 +1,25 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-6
+ * Time: 上午10:38
+ * Email: tanguobin@duokan.com
+ * Description: 首页页面样式
+ */
+
+.enter-issue, .enter-argument {
+    float: left;
+    width: 470px;
+}
+.enter-issue {
+    margin-right: 15px;
+}
+.enter-issue .enter-btn, .enter-argument .enter-btn,
+.enter-verbal .enter-btn, .enter-quantity .enter-btn {
+    margin: 0 auto;
+}
+
+/* 题集 */
+.pool-list a {
+    margin: 20px auto;
+}

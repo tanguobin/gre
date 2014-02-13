@@ -1,0 +1,24 @@
+{=include depends/inc_reset.css=}
+{=include depends/inc_base.css=}
+{=include depends/inc_html5.css=}
+{=include depends/inc_header.css=}
+{=include depends/inc_footer.css=}
+{=include depends/inc_layout.css=}
+{=include depends/inc_button.css=}
+{=include depends/inc_icon.css=}
+{=include depends/inc_help_img.css=}
+{=include depends/inc_module_block.css=}
+
+{=include depends/inc_page.home.css=}
+{=include depends/inc_page.help.css=}
+{=include depends/inc_page.modeltest.css=}
+{=include depends/inc_page.writing.css=}
+{=include depends/inc_page.reasoning.css=}
+{=include depends/inc_page.review.css=}
+{=include depends/inc_page.result.css=}
+{=include depends/inc_page.login.css=}
+{=include depends/inc_page.apply.css=}
+{=include depends/inc_page.ucenter.css=}
+{=include depends/inc_page.pool.css=}
+
+{=include depends/ui_dialog.css=}

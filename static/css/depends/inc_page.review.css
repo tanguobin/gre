@@ -1,0 +1,36 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-4-27
+ * Time: 下午11:14
+ * Review页面的样式
+ */
+
+.review {
+    margin: 50px 100px;
+}
+.review p, .review .list {
+    margin-top: 20px;
+}
+.review table {
+    border: 1px solid #7a8a99;
+    float: left;
+    width: 410px;
+    margin-right: 50px;
+}
+.review table th {
+    background-color: #b7d0de;
+}
+.review table td {
+    text-align: center;
+    border: 1px solid #b7d0de;
+}
+.review table .col-1 {
+    width: 150px;
+}
+.review table tr.disable {
+    color: #c0c0c0;
+}
+.review table tr.enable td {
+    background-color: #d1e4ef;
+}

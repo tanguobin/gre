@@ -1,0 +1,26 @@
+<section class="verbal-multiple" id="J_verbal-{$verbal.index}">
+    <div class="hd">
+        <p>Select the <b>two</b> answer choices that, when used to complete the sentence, fit the meaning of the sentence as a whole <b>and</b> produce completed sentences that are alike in meaning.</p>
+    </div>
+    <div class="bd J_question">
+        <p>{$verbal.question}</p>
+        <ul class="multiple">
+        {foreach from=$verbal.choices[0] item="choices"}
+            <li>{$choices}</li>
+        {/foreach}
+        </ul>
+    </div>
+</section>
+<script type="text/javascript">
+    (function () {
+        var verbal = '#J_verbal-{$verbal.index}';
+        jQuery.data($(verbal)[0], { qid: '{$verbal.qid}', count: 2, answer: '{$verbal.answer}', explain: '{$verbal.explain}' });
+        $(verbal + ' li').click(function (evt) {
+            var me = this;
+            if ($(me).hasClass('active')) {
+                return false;
+            }
+            $(me).addClass('active');
+        });
+    }) ();
+</script>

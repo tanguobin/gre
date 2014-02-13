@@ -1,0 +1,135 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-5
+ * Time: 下午3:13
+ * Email: tanguobin@duokan.com
+ * Description: header部分样式
+ */
+
+.page #header, .page #container, .page #footer {
+    width: 960px;
+}
+.page #header {
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+#header .logo {
+    display: inline-block;
+    height: 73px;
+    width: 185px;
+    cursor: pointer;
+    background-image: url('/static/img/logo.png');
+    background-repeat: no-repeat;
+    _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/static/img/logo.png');
+    _background-image: none;
+}
+.test-page #header {
+    background-color: #d1e4ef;
+    height: 82px;
+}
+.nav-channel {
+    overflow: hidden;
+    color: #fff;
+    height: 35px;
+    background: #13834B url('/static/img/menu-bg.jpg') 0 0 repeat-x;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.nav-channel-list li {
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei', 'Simsun', arial, sans-serif;
+    float: left;
+    width: 100px;
+}
+.nav-channel-list li a {
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.nav-channel-list a:hover {
+    text-decoration: none;
+    background: url('/static/img/menu-bg.jpg') repeat-x scroll 0 -140px transparent;
+}
+.nav-channel-list .nav-active a {
+    background: url('/static/img/menu-bg.jpg') repeat-x scroll 0 -70px transparent;
+}
+
+/* top-bar */
+.top-bar {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid white;
+}
+.top-bar .inner {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    width: 960px;
+    z-index: 2;
+}
+.top-bar ul {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.top-bar ul a {
+    color: #666;
+}
+.top-bar ul li {
+    float: left;
+    margin-left: 2px;
+}
+.top-bar .add-fav {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+.top-bar .qqgroup {
+    border-bottom: 0 none;
+    border-top: medium none white;
+    color: #666;
+    padding: 1px;
+    position: relative;
+    z-index: 2;
+}
+.top-bar .qqgroup .hd {
+    /*background: url('/static/img/icons.png') no-repeat scroll right -150px transparent;*/
+    padding: 0 22px 0 8px;
+}
+.top-bar .qqgroup .bd {
+    display: none;
+    line-height: 18px;
+    margin: -5px 22px 6px;
+}
+.top-bar .qqgroup .bd a {
+    display: block;
+}
+.top-bar .hover .qqgroup {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    top: -1px;
+}
+.top-bar .hover .qqgroup .bd {
+    display: block;
+}
+.top-bar .weibo-follow {
+    _padding-top: 6px;
+}
+.top-bar .weibo-follow a {
+    display: inline-block;
+    line-height: 17px;
+    padding: 0 8px 0 20px;
+}
+.top-bar .links a {
+    margin-left: 5px;
+}

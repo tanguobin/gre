@@ -1,0 +1,51 @@
+<section class="verbal-reading" id="J_verbal-{$reading.index}">
+    <div class="col-m">
+        <div class="m-wrap J_question">
+            <div class="hd">{$reading.question}</div>
+            <div class="bd">
+                {if $reading.qtype == 'single' || $reading.qtype == 'multiple'}
+                <ul class="{$reading.qtype}">
+                    {foreach from=$reading.choices[0] item="choice"}
+                    <li>{$choice}</li>
+                    {/foreach}
+                </ul>
+                {/if}
+            </div>
+        </div>
+    </div>
+    <div class="col-sub">
+        <div class="hd">{if $reading.start}Questions {$reading.start} to {$reading.to} are based on this passage.{else}Question {$reading.index} is based on this passage.{/if}</div>
+        <div class="bd">{$reading.article}</div>
+    </div>
+</section>
+<script type="text/javascript">
+(function () {
+    var verbal = '#J_verbal-{$reading.index}',
+        qid = '{$reading.qid}',
+        qtype = '{$reading.qtype}',
+        question = {$reading|@json_encode},
+        count = {if $reading.qtype == 'select'}-1{else}1{/if};
+    jQuery.data($(verbal)[0], { qid: qid, count: count, question: question });
+    if (qtype === 'select') {
+        $(verbal + ' .col-sub .bd ' + ' span').click(function (evt) {
+            var me = this;
+            if ($(me).hasClass('active')) {
+                return false;
+            }
+            $(me).addClass('active').siblings().removeClass('active');
+        });
+    } else {
+        $(verbal + ' li').click(function (evt) {
+            var me = this;
+            if ($(me).hasClass('active')) {
+                return false;
+            }
+            if (qtype === 'single') {
+                $(me).addClass('active').siblings().removeClass('active');
+            } else {
+                $(me).addClass('active');
+            }
+        });
+    }
+}) ();
+</script>

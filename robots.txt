@@ -1,0 +1,7 @@
+#
+# robots.txt gretest
+#
+Sitemap: http://www.igrer.com/sitemap.xml
+User-agent: *
+Disallow: /static/
+Disallow: /ajax/

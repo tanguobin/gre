@@ -1,0 +1,44 @@
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Administrator
+ * Date: 2012-5-4
+ * Time: 下午4:52
+ * module block样式
+ */
+
+.rect {
+    border: 1px solid #148c4f;
+    border-radius: 2px;
+}
+.rect .hd {
+    padding: 2px 0 5px 10px;
+}
+.rect .bd {
+    padding: 10px;
+}
+.rect .bd .intro {
+    margin-bottom: 20px;
+}
+
+.mod {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+.mod .hd {
+    padding: 2px 0 5px 10px;
+    border-bottom: 2px solid #148c4f;
+}
+.mod .bd {
+    color: #3f3f3f;
+    padding: 10px;
+    font-size: 14px;
+}
+.mod li {
+    list-style: inside;
+    padding-left: 40px;
+}
+.mod .bd p {
+    margin-bottom: 10px;
+    text-indent: 2em;
+}

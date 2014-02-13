@@ -1,0 +1,73 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-10
+ * Time: 下午1:39
+ * Email: tanguobin@duokan.com
+ * Description: 写作部分样式
+ */
+
+.writing {
+    border: 1px solid #000;
+    padding: 2px;
+    height: 600px;
+}
+.writing .col-sub {
+    width: 450px;
+    border: 1px solid #000;
+    padding: 2px;
+    margin-left: -100%;
+    float: left;
+    height: 594px;
+}
+.writing .col-m {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    height: 603px;
+}
+.writing .col-m .m-wrap {
+    margin-left: 460px;
+    height: 598px;
+    border: 1px solid #000;
+}
+.writing .col-sub .title {
+    border: 1px solid #000;
+    padding: 25px 21px;
+}
+.writing .col-sub .question {
+    padding: 10px 21px;
+}
+.writing:after, .col-sub:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.writing-editor {
+    padding-left: 10px;
+}
+.writing-editor .editor-toolbar {
+    background-color: #c0c0c0;
+    border: 2px solid #000;
+    height: 36px;
+    padding-left: 4px;
+    margin-left: -10px;
+}
+.writing-editor .editor-toolbar a {
+    margin: 4px 1px 0;
+}
+.writing-editor .editor-input {
+    outline: none;
+    border: 0;
+    height: 530px;
+    resize: none;
+    width: 100%;
+    padding: 10px 0;
+    overflow: auto;
+    ime-mode: disabled;
+}
+#uyan_frame {
+    margin-top: 10px;
+}

@@ -1,0 +1,56 @@
+/**
+ * Created by gstan.
+ * User: tanguoshuai
+ * Date: 2012-4-6
+ * Time: 10:38
+ * Email: gstan001@126.com
+ * Description: 关于我们的样式
+ */
+
+.help {
+    padding-left: 30px;
+}
+.help section {
+    padding: 20px 30px 30px;
+}
+.help .cooperation li {
+    margin-bottom: 1em;
+}
+.help .announce .noindent {
+    text-indent: 0;
+}
+.help .about-us p {
+    margin-bottom: 20px;
+}
+.help .announce p {
+    text-indent: 2em;
+    margin-bottom: 20px;
+}
+.help-nav {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.help-nav li {
+    height: 46px;
+    line-height: 46px;
+}
+.site-link-list {
+    margin-top: 30px;
+}
+.site-link-list li {
+    margin-top: 10px;
+}
+.help-nav a {
+    display: block;
+    margin-right: -1px;
+    padding-left: 20px;
+}
+.help-nav .current a {
+    border-color: #ccc #fff #ccc #ccc;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}

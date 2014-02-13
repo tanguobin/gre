@@ -1,0 +1,54 @@
+/**
+ * Created by gbtan.
+ * User: tanguobin
+ * Date: 2012-4-6
+ * Time: 上午10:42
+ * Email: tanguobin@duokan.com
+ * Description: common样式
+ */
+
+/* 清除浮动 */
+.clear {
+    clear:both;
+}
+.cf:before,
+.cf:after { content:""; display:block; }
+.cf:after { clear:both; }
+.cf { *zoom:1; }
+
+/* hide */
+body .hide {
+    display: none;
+}
+
+/* 重置h1-h4文字 */
+h1, h2, h3, h4 {
+    font-weight: 500;
+    font-family: 'Microsoft YaHei', 'Simsun', arial, sans-serif;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+/* link color */
+a {
+    color: #168B79;
+}
+.red {
+    color: #f00;
+}
+.tab {
+    width: 2em;
+    display: inline-block;
+}
+.fr {
+    float: right;
+}
